@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>SYSTA SYSTA - Fashion Redefined</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        #bg-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+
+
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: linear-gradient(45deg, #111, #222);
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: #fff;
+            text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            padding: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ccc;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            background: url('placeholder.jpg') center/cover no-repeat;
+            position: relative;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .hero-text {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 10px;
+            animation: slideUp 1.5s ease-in-out;
+        }
+
+        .hero-text p {
+            font-size: 22px;
+            font-weight: bold;
+            text-transform: uppercase;
+            background: linear-gradient(90deg, #fff, #ccc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        .products {
+            padding: 50px;
+        }
+
+        .product-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .product {
+            background: linear-gradient(45deg, #222, #333);
+            padding: 20px;
+            border-radius: 15px;
+            width: 250px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .product:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .contact {
+            padding: 50px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: linear-gradient(45deg, #111, #222);
+            box-shadow: 0px -4px 10px rgba(255, 255, 255, 0.2);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <video autoplay muted loop id="bg-video">
+        <source src="vid2.Mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    
+    <header>
+        <div class="logo">SYSTA SYSTA</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>BUUBU & MORE</h1>
+            <p>Discover fashion that speaks your identity. Bold, timeless, and unique.
+                Say hello to SYSTA | SYSTA…a clothing brand where comfort meets style in every thread. 
+                Our Buubu collection is designed for the modern woman who values elegance, ease, and effortless chic and I can’t wait to put you ladies on 
+                ✨ #SYSTASYSTA #BuubuVibes #EffortlessElegance #ComfortInStyle #RichAuntie.
+            </p>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="gifty.jpg" alt="Product 1">
+                <h3>Fringe Buubu Dress</h3>
+                <p>GHS 240.00</p>
+            </div>
+            <div class="product">
+                <img src="both.jpg" alt="Product 2">
+                <h3>Short Buubu Dress</h3>
+                <p>GHS 150.00</p>
+            </div>
+            <div class="product">
+                <img src="val.jpg" alt="Product 3">
+                <h3>Long Buubu Dress</h3>
+                <p>GHS 180.00</p>
+            </div>
+            <div class="product">
+                <img src="gifty2.jpg" alt="Product 4">
+                <h3>Long Buubu Dress</h3>
+                <p>GHS 180.00</p>
+            </div>
+            <div class="product">
+                <img src="val2.jpg" alt="Product 5">
+                <h3>Fringe Buubu Dress</h3>
+                <p>GHS 250.00</p>
+            </div>
+            <div class="product">
+                <img src="val3.jpg" alt="Product 6">
+                <h3>Long Buubu Dress</h3>
+                <p>GHS 200.00</p>
+        </div>
+        <br>
+        
+        <p>& More!!!</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:info@systasysta.com">info@systasysta.com</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/systa_systa_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">@Systa_systa</a></p>
+        <p>Call us: 0597868871 </p>
+    </section>
+
+    <footer>
+        <p>© 2025 SYSTA SYSTA. All rights reserved.</p>
+    </footer>
+</body>
+</html>
