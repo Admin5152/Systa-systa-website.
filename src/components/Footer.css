@@ -1,0 +1,13 @@
+.footer {
+  text-align: center;
+  padding: 24px;
+  background: linear-gradient(45deg, rgba(17, 17, 17, 0.95), rgba(34, 34, 34, 0.95));
+  box-shadow: 0 -4px 12px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  color: #aaa;
+  font-size: 14px;
+}
+
+.footer p {
+  margin: 0;
+}
